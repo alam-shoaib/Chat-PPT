@@ -8,4 +8,53 @@
     tools:showIn="@layout/app_bar_main">
 
 
+    <TextView
+        android:id="@+id/loginAlertmsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Please login with your email id"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/messageBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Message.."
+        android:inputType="textMultiLine"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sendMsgBtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="7dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="messageBtnClicked"
+        android:tint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/messageBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/messageBar"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/messageBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginAlertmsg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

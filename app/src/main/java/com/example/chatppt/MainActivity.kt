@@ -2,6 +2,7 @@ package com.example.chatppt
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -35,6 +36,18 @@ class MainActivity : AppCompatActivity() {
 
         //setupActionBarWithNavController(navController, appBarConfiguration)
        // navView.setupWithNavController(navController)
+    }
+    fun LoginClicked(view: View)
+    {
+
+    }
+    fun chanelAdd(view: View)
+    {
+
+    }
+    fun messageBtnClicked(view: View)
+    {
+
     }
 
 
