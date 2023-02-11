@@ -91,7 +91,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/light12" />
+        app:srcCompat="@drawable/profiledefault" />
 
     <Button
         android:id="@+id/createAccBtn"
