@@ -1,5 +1,6 @@
 package com.example.chatppt
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
@@ -39,7 +40,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun LoginClicked(view: View)
     {
-
+       val login=Intent(this,loginActivity::class.java)
+        startActivity(login)
     }
     fun chanelAdd(view: View)
     {

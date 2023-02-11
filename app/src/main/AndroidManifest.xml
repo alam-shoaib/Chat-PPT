@@ -12,6 +12,12 @@
         android:theme="@style/Theme.ChatPPT"
         tools:targetApi="31">
         <activity
+            android:name=".singupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
